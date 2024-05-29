@@ -1,8 +1,11 @@
+using Microsoft.EntityFrameworkCore;
+using OnlineShop;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddDbContext<MyDbContext>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

@@ -1,7 +1,10 @@
-﻿namespace OnlineShop.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace OnlineShop.Models
 {
     public class Order
     {
+        [Key]
         public int OrderID { get; set; }
         public int UserID { get; set; }
         public DateTime OrderDate { get; set; }

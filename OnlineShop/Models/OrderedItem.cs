@@ -1,7 +1,10 @@
-﻿namespace OnlineShop.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace OnlineShop.Models
 {
     public class OrderedItem
     {
+        [Key]
         public int OrderItemID { get; set; }
         public int OrderID { get; set; }
         public int ProductID { get; set; }
